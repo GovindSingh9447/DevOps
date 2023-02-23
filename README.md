@@ -12,6 +12,7 @@
 
 
 ## aws eks update-kubeconfig --region ap-south-1 --name mchoice-act-preprod --profile mchoice
+## cat .aws/credentials 
 
 
 
