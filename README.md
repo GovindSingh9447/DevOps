@@ -11,8 +11,10 @@
 
 
 
-## aws eks update-kubeconfig --region ap-south-1 --name mchoice-act-preprod --profile mchoice
-## cat .aws/credentials 
+## aws eks update-kubeconfig --region ap-south-1 --name mchoice-act-preprod --profile mchoice (Creating kubeconfig)
+## cat .aws/credentials  (to viewing profile)
+## aws configure --profile mchoice  (For adding profile)
+
 
 
 
