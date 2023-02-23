@@ -9,6 +9,12 @@
 | Create an Admin User | IAM | [Exercise](Exercises/IAM_User/exercise.md) | Easy | [Solution](Exercises/IAM_User/solution.md) |
 
 
+
+
+## aws eks update-kubeconfig --region ap-south-1 --name mchoice-act-preprod --profile mchoice
+
+
+
 ### EC2
 
 |Name|Services|Problem Statement|Difficulty|Solution|
