@@ -46,4 +46,24 @@ First, create a Docker secret:
 echo "mypassword" | docker secret create my_password -
 ```
 
+Then, use this secret in your Docker container:
 
+```
+FROM python:3.9
+
+# Copy your Python project files into the container
+COPY . /app
+
+# Set the working directory
+WORKDIR /app
+
+# Install dependencies
+RUN pip install -r requirements.txt
+
+# Run your Python script
+CMD ["python", "your_script.py"]
+```
+
+Inside your Python code, you can read the secret from the file /run/secrets/my_password.
+
+Regardless of the method you choose, always be cautious with sensitive data and avoid hardcoding credentials directly into your Dockerfiles or Docker images. Use secure methods like environment variables or Docker secrets to manage credentials safely.
